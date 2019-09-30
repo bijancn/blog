@@ -1,0 +1,86 @@
+# https://github.com/rhazdon/homepage/blob/master/config.toml
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Bijan Chokoufe Nejad"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Bijan Chokoufe Nejad"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  homeSubtitle = "Technical Lead | Functional Programmer | CI/CD Wizard | PhD Physics"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/bijancn/"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:bijan@chokoufe.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/bijancn/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/bijanchokoufe/"
+
+#  [[params.social]]
+#    name = "gitlab"
+#    url  = "https://gitlab.com/bijan.chokoufe"
+
+[languages]
+  [languages.en]
+    title = "bijancn"
+    subtitle = "Tech blog"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "~/bijancn/"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"
+  [[menu.main]]
+    identifier = "reading"
+    name       = "Recommended Reading"
+    url        = "/reading"
+  [[menu.main]]
+    identifier = "physics"
+    name       = "Physics"
+    url        = "/physics"
